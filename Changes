@@ -1,0 +1,15 @@
+Revision history for perl module Template::Plugin::HTTP::UserAgent
+
+0.03 2012-02-27
+
+    - Oops, forgot to include MANIFEST
+
+0.02 2012-02-27
+
+    - Added repository location to pod
+    - Added reference to HTML::ParseBrowser to SEE ALSO in pod
+
+0.01 2012-02-26
+
+    - first version of module
+
