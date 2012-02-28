@@ -21,6 +21,7 @@ requires:
   HTML::ParseBrowser: 1.05
   Template::Plugin: 0
   Template::Test: 0
+  parent: 0
 resources:
   repository: https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent
-version: 0.03
+version: 0.04
