@@ -4,7 +4,7 @@
       "Neil Bowers <neil@bowers.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.132510",
    "license" : [
       "unknown"
    ],
@@ -25,11 +25,6 @@
             "ExtUtils::MakeMaker" : "0"
          }
       },
-      "configure" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
       "runtime" : {
          "requires" : {
             "HTML::ParseBrowser" : "1.05",
@@ -42,8 +37,10 @@
    "release_status" : "stable",
    "resources" : {
       "repository" : {
-         "url" : "https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent"
+         "type" : "git",
+         "url" : "git://github.com/neilbowers/Template-Plugin-HTTP-UserAgent.git",
+         "web" : "https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
