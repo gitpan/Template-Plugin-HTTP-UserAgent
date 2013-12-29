@@ -4,9 +4,9 @@
       "Neil Bowers <neil@bowers.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.132510",
+   "generated_by" : "ExtUtils::MakeMaker version 6.82, CPAN::Meta::Converter version 2.132830",
    "license" : [
-      "unknown"
+      "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -30,7 +30,8 @@
             "HTML::ParseBrowser" : "1.05",
             "Template::Plugin" : "0",
             "Template::Test" : "0",
-            "parent" : "0"
+            "parent" : "0",
+            "perl" : "5.01"
          }
       }
    },
@@ -42,5 +43,5 @@
          "web" : "https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent"
       }
    },
-   "version" : "0.05"
+   "version" : "0.06"
 }

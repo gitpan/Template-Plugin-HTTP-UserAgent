@@ -5,8 +5,8 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.76, CPAN::Meta::Converter version 2.132510'
-license: unknown
+generated_by: 'ExtUtils::MakeMaker version 6.82, CPAN::Meta::Converter version 2.132830'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -20,6 +20,7 @@ requires:
   Template::Plugin: 0
   Template::Test: 0
   parent: 0
+  perl: 5.01
 resources:
   repository: git://github.com/neilbowers/Template-Plugin-HTTP-UserAgent.git
-version: 0.05
+version: 0.06
