@@ -1,11 +1,12 @@
 package Template::Plugin::HTTP::UserAgent;
-use 5.10.0;
+$Template::Plugin::HTTP::UserAgent::VERSION = '0.07';
+# ABSTRACT: Template plugin for parsing HTTP User-Agent string
+
+use 5.006;
 use strict;
 use warnings;
 use parent 'Template::Plugin';
 use HTML::ParseBrowser;
-
-our $VERSION = '0.06';
 
 sub new
 {
@@ -54,9 +55,11 @@ Template::Plugin::HTTP::UserAgent - Template plugin for parsing HTTP User-Agent 
 =head1 DESCRIPTION
 
 Template::Plugin::HTTP::UserAgent is a plugin for the Template Toolkit
-which is used to extract information from an HTTP User-Agent string.
-The User-Agent string can come from one of two places.
-Either you pass the string to the constructor:
+that is used to extract information from an HTTP User-Agent string.
+The User-Agent string can either be passed to the constructor,
+or the HTTP_USER_AGENT environment variable will be used, if set.
+
+The first option is to pass the string to the constructor:
 
   [% USE ua = HTTP::UserAgent('Opera/9.64 (X11; Linux i686; U; da) Presto/2.1.1')
 
@@ -109,14 +112,18 @@ Template::Plugin::HTTP::UserAgent might switch to using
 a different module internally,
 which is why I've started off with a generic set of methods initially.
 
+=head1 SEE ALSO
+
+L<Template::Plugin::MobileAgent> is a similar module,
+but it uses L<HTTP::MobileAgent> under the hood,
+which is particularly aimed at recognising user agent strings from Japanese mobile phones.
+
+L<HTML::ParseBrowser> is the module used by Template::Plugin::HTTP::UserAgent to
+do the actual parsing of the user agent string.
+
 =head1 REPOSITORY
 
 L<https://github.com/neilbowers/Template-Plugin-HTTP-UserAgent>
-
-=head1 SEE ALSO
-
-L<Template::Plugin::MobileAgent>,
-L<HTML::ParseBrowser>.
 
 =head1 AUTHOR
 
